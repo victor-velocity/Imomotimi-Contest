@@ -7,149 +7,158 @@
     <link rel="stylesheet" href="./src/output.css">
     <link rel="stylesheet" href="./assets/fontawesome/css/all.css" rel="stylesheet"/>
 </head>
-<body>
-    <div class="bg-no-repeat bg-cover bg-center w-auto h-[900px]" style="background-image: url(./assets/images/1.jpg);">
+<body class="m-0 p-0">
+    <div class="bg-no-repeat bg-cover bg-center w-auto h-auto" style="background-image: url(./assets/images/1.jpg);">
         <header class="flex justify-between items-center pt-[14px]">
-            <img src="./assets/images/logo.png" alt="logo" width="60px" class="logo">
-            <nav>
-                <ul class="flex list-none mr-[200px]">
+            <img src="./assets/images/logo.png" alt="logo" class="md:w-[60px] w-10 ml-3">
+            <nav class="hidden lg:flex">
+                <ul class="flex list-none mr-[100px]">
                     <li><a class="no-underline mx-5 text-lg capitalize text-white font-sans hover:text-xl hover:opacity-80 hover:underline hover:decoration-red-800" href="#">intro</a></li>
                     <li><a class="no-underline mx-5 text-lg capitalize text-white font-sans hover:text-xl hover:opacity-80 hover:underline hover:decoration-red-800"  href="#countdownlink">countdown</a></li>
                     <li><a class="no-underline mx-5 text-lg capitalize text-white font-sans hover:text-xl hover:opacity-80 hover:underline hover:decoration-red-800"  href="#noteslink">notes</a></li>
                     <li><a class="no-underline mx-5 text-lg capitalize text-white font-sans hover:text-xl hover:opacity-80 hover:underline hover:decoration-red-800"  href="#contactlink">Contact</a></li>
                 </ul>
             </nav>
-            <div><a class="bg-red-800 mr-[50px] w-[130px] h-[35px] py-[10px] px-[20px] rounded-md  capitalize font-sans border-none text-white no-underline" href="#"><i class="fa-solid fa-phone-volume mx-2 text-white"></i>Call us</a></div>
+            <div class="hidden lg:block"><a class="bg-red-800 mr-[50px] w-[130px] h-[35px] py-[10px] px-[20px] rounded-md  capitalize font-sans border-none text-white no-underline" href="#"><i class="fa-solid fa-phone-volume mx-2 text-white"></i>Call us</a></div>
         </header>
-        <div class="flex justify-between items-center py-12">
-            <div class="text-center">
-                <i class="fa-solid fa-chevron-left text-white text-[70px] m-3 hover:text-[75px] cursor-pointer"></i>
+        <div class="flex md:justify-between justify-center items-center py-12">
+            <div class="text-center hidden md:flex">
+                <i class="fa-solid fa-chevron-left text-white md:text-[50px] md:hover:[55px] lg:text-[70px] m-3 lg:hover:text-[75px] cursor-pointer"></i>
             </div>
             <div class="text-center text-white font-sans">
-                <p class="mt-[150px] mb-0 text-[18px] uppercase font-sans text-[goldenrod]"><b>Imomotimi Foundation Presents</b></p>
-                <p class="mt-1 mb-7 font-sans text-[85px] capitalize">Imomotimi Ijaw <br>Dance Contest 2024</p>
-                <p><a href="#" class="my-5 no-underline text-white w-fit px-[40px] py-3 bg-red-800 rounded content-center capitalize hover:bg-transparent hover:text-white hover:border hover:border-white">Download Entry Form <i class="fa-solid fa-download text-white"></i></a></p>
-                <p class="mt-8 text-base">All duly filled out forms and the entry fees should be brought along to the audition.</p>
+                <p class="mt-[150px] mb-0 hidden md:block text-center uppercase font-sans text-[goldenrod]"><b>Imomotimi Foundation Presents</b></p>
+                <p class="md:mt-1 mt-[100px] md:mb-7 mb-10 font-sans md:text-[85px] text-[36px] capitalize">Imomotimi Ijaw <br>Dance Contest 2024</p>
+                <p><a href="#" class="my-5 no-underline text-white w-fit px-[40px] text-sm md:text-[30px] mt-[30px] md:mt-0 py-3 bg-red-800 rounded content-center capitalize hover:bg-transparent hover:text-white hover:border hover:border-white">Download Entry Form <i class="fa-solid fa-download text-white"></i></a></p>
+                <p class="mt-8 text-base text-[10px] md:text-lg">All duly filled out forms and the entry fees should be brought along to the audition.</p>
             </div>
-            <div class="text-center">
-                <i class="fa-solid fa-chevron-right text-white text-[70px] m-3 hover:text-[75px] cursor-pointer"></i>
+            <div class="text-center hidden md:flex">
+                <i class="fa-solid fa-chevron-right text-white  md:text-[50px] md:hover:[55px] lg:text-[70px] m-3 lg:hover:text-[75px] cursor-pointer"></i>
             </div>
         </div>
-        <div class="flex justify-center">
+        <div class="md:flex justify-center hidden">
             <i class="fa-solid fa-computer-mouse text-[30px] my-10 text-white"></i>
         </div>
         <div>
-            <img alt="display" src="./assets/images/shape-top-white-80.png" class="w-full h-[80px] mt-30px">
+            <img alt="display" src="./assets/images/shape-top-white-80.png" class="w-full h-[85px] mt-30px hidden lg:flex">
         </div>
     </div>
     <main>
         <section id="countdownlink" class="font-sans w-full h-auto bg-white">
-            <div class="h-96">
-                <img alt="display" src="./assets/images/shape-bottom-white-80.png" class="w-full h-auto">
-                <p class="text-4xl text-center text-[#1f0e05] font-bold mb-6">Countdown to Audition</p>
-                <div class="flex items-center justify-center m-40px text-[#1f0e05] font-bold">
+            <div class="h-[200px] pt-7 md:pt-0 md:h-auto relative">
+                <img alt="display" src="./assets/images/shape-bottom-white-80.png" class="w-full h-auto hidden md:flex">
+                <p class="md:text-4xl text-2xl text-center text-[#1f0e05] font-bold mb-6">Countdown to Audition</p>
+                <div class="flex items-center justify-center my-10 text-[#1f0e05] font-bold">
                     <div class="flex flex-col items-center">
-                        <span class="text-[35px]">29</span><hr class="w-5 my-1 border-gray-400">
+                        <span class="text-xl md:text-[35px]">29</span>
+                        <hr class="w-5 my-1 border-gray-400">
                         <span class="text-sm">Days</span>
                     </div>
-                    <div class="mx-5 text-[35px]">:</div>
+                    <div class="mx-5 text-xl md:text-[35px]">:</div>
                     <div class="flex flex-col items-center">
-                        <span class="text-[35px]">02</span><hr class="w-5 my-1 border-gray-400">
+                        <span class="text-xl md:text-[35px]">02</span>
+                        <hr class="w-5 my-1 border-gray-400">
                         <span class="text-sm">Hours</span>
                     </div>
-                    <div class="mx-5 text-[35px]">:</div>
+                    <div class="mx-5 text-xl md:text-[35px]">:</div>
                     <div class="flex flex-col items-center">
-                        <span class="text-[35px]">08</span><hr class="w-5 my-1 border-gray-400">
+                        <span class="text-xl md:text-[35px]">08</span>
+                        <hr class="w-5 my-1 border-gray-400">
                         <span class="text-sm">Minutes</span>
                     </div>
-                    <div class="mx-5 text-[35px]">:</div>
+                    <div class="mx-5 text-xl md:text-[35px]">:</div>
                     <div class="flex flex-col items-center">
-                        <span class="text-[35px]">06</span><hr class="w-5 my-1 border-gray-400">
+                        <span class="text-xl md:text-[35px]">06</span>
+                        <hr class="w-5 my-1 border-gray-400">
                         <span class="text-sm">Seconds</span>
                     </div>
                 </div>
                 <div>
-                    <img alt="display" src="./assets/images/shape-top-grey-80.png" class="w-full mt-[100px] h-[80px]">
+                    <img alt="display" src="./assets/images/shape-top-grey-80.png" class="w-full h-auto mt-16 hidden md:flex">
                 </div>
             </div>
-            <div id="noteslink" class="h-96 w-full bg-[#f6f4ee]">
-                <img alt="display" src="./assets/images/shape-bottom-grey-80.png" class="w-full h-auto mb-8">
-                <div class="flex justify-around items-baseline mr-16">
-                    <p class="text-4xl mt-0 font-bold ml-4xl">Important things<br>to note...</p>
-                    <div class="inline-flex mt-0">
-                        <ul class="mt-0 list-none mr-7">
-                            <li><i class="fa-solid fa-money-bill-1-wave text-5xl text-red-800"></i></li>
-                            <li class="text-2xl font-bold mb-4">Pricing</li>
-                            <li>Auction forms are available for<br> ₦1000 for single contestants,<br> and ₦1500 for a group of five.</li>
-                        </ul>
-                        <ul class="mt-0 list-none">
-                            <li><i class="fa-solid fa-trophy text-5xl text-red-800"></i></li>
-                            <li class="text-2xl font-bold mb-4">Prizes</li>
-                            <li><strong>1st Prize: </strong>₦2,000,000</li>
-                            <li><strong>2nd Prize: </strong>₦1,000,000</li>
-                            <li><strong>3rd Prize: </strong>₦500,000</li>
-                        </ul>
+            <div id="noteslink" class="md:h-96 h-auto w-full bg-[#f6f4ee] pb-[10px] pt-[50px] md:py-0">
+                <img alt="display" src="./assets/images/shape-bottom-grey-80.png" class="w-full h-auto mb-8 hidden md:flex">
+                <div class="md:flex justify-around items-baseline block pl-5">
+                    <p class="md:text-4xl text-[30px] mt-0 font-bold md:ml-4xl mr-0 md:mr-5">Important things<br>to note...</p>
+                    <div class="md:inline-flex mt-0 flex flex-col pl-2 md:pl-0">
+                        <div>
+                            <ul class="md:mt-0 mt-10 list-none md:mr-7">
+                                <li><i class="fa-solid fa-money-bill-1-wave md:text-5xl text-[30px] text-red-800"></i></li>
+                                <li class="text-xl md:text-2xl font-bold mb-4">Pricing</li>
+                                <li>Auction forms are available for<br> ₦1000 for single contestants,<br> and ₦1500 for a group of five.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="md:mt-0 mt-10 list-none md:mr-8">
+                                <li><i class="fa-solid fa-trophy md:last:text-5xl text-red-800 text-[30px]"></i></li>
+                                <li class="text-xl md:text-2xl font-bold mb-4">Prizes</li>
+                                <li><strong>1st Prize: </strong>₦2,000,000</li>
+                                <li><strong>2nd Prize: </strong>₦1,000,000</li>
+                                <li><strong>3rd Prize: </strong>₦500,000</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="relative overflow-hidden w-full h-[500px]">
             <iframe class="absolute top-0 left-0 h-[500px] border-0 w-full" title="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.217862403855!2d3.3308180744810585!3d6.619835722037391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93e5b4e94d63%3A0x93aba540bfd71764!2sHoneyTreat%20Trade%20Academy!5e0!3m2!1sen!2sng!4v1727634805217!5m2!1sen!2sng"></iframe>
+            <img alt="display" src="./assets/images/shape-top-grey-80.png" class="absolute top-[440px] left-0 w-full h-[80px] hidden md:flex">
         </section>
-        <section id="contactlink">
-            <img alt="display" src="./assets/images/shape-bottom-grey-80.png">
-            <div>
-                <div>
-                    <h2>For More Information:</h2>
-                    <p><strong>Hotlines: </strong>07035973706 & 08108112759</p>
-                    <p><strong>Email: </strong> info@ijawdancecontest.ng</p>
-                    <p><strong>Audition Location: </strong> Nitro Studio, Tamara Hall,<br>Otiotio Road, Yenagoa, Bayelsa state.</p>
+        <section id="contactlink" class="bg-[#f6f4ee] h-auto pb-16">
+            <img alt="display" src="./assets/images/shape-bottom-grey-80.png" class="w-full h-auto hidden md:flex">
+            <div class="md:flex md:mx-28 block">
+                <div class="mt-5 md:mr-4 md:w-1/2 w-auto mx-1">
+                    <h2 class="my-1 md:text-[40px] text-[30px]">For More Information:</h2>
+                    <p class="my-1 text-lg text-[#1f0e05] opacity-80"><strong>Hotlines: </strong>07035973706 & 08108112759</p>
+                    <p class="my-1 text-lg text-[#1f0e05] opacity-80"><strong>Email: </strong> info@ijawdancecontest.ng</p>
+                    <p class="my-1 text-lg text-[#1f0e05] opacity-80"><strong>Audition Location: </strong> Nitro Studio, Tamara Hall,<br>Otiotio Road, Yenagoa, Bayelsa state.</p>
                 </div>
             
-                <form>
-                    <div>
-                        <div>
-                            <div>
-                                <i class="fa-regular fa-user"></i>
-                                <input type="text" name="f.name" placeholder="Name">
+                <form class="w-full">
+                    <div class="flex flex-col gap-5 pl-2 pr-5">
+                        <div class="flex flex-col md:flex-row md:justify-between md:gap-5">
+                            <div class="border-b-[1px] border-b-[rgba(0,0,0,0.5)] mx-2 w-full flex items-center gap-3 flex-shrink">
+                                <i class="fa-regular fa-user opacity-50 mr-3 text-[20px]"></i>
+                                <input type="text" name="f.name" placeholder="Name" class="border-0 bg-transparent w-full outline-0 text-[16px] p-1">
                             </div>
-                            <div>
-                                <i class="fa-regular fa-envelope"></i>
-                                <input type="email" name="email" placeholder="Email Address">
-                            </div>
-                        </div>
-            
-                        <div>
-                            <div>
-                                <i class="fa-solid fa-phone-volume"></i>
-                                <input type="tel" name="number" placeholder="Phone">
-                            </div>
-                            <div>
-                                <i class="fa-solid fa-circle-info"></i>
-                                <input type="text" name="subject" placeholder="Subject">
+                            <div class="border-b-[1px] border-b-[rgba(0,0,0,0.5)] mx-2 w-full flex items-center gap-3 flex-shrink">
+                                <i class="fa-regular fa-envelope opacity-50 mr-3 text-[20px]"></i>
+                                <input type="email" name="email" placeholder="Email Address" class="border-0 bg-transparent w-full outline-0 text-[16px] p-1">
                             </div>
                         </div>
             
-                        <div>
-                            <i class="fa-solid fa-pencil"></i>
-                            <textarea name="comment" id="comment" placeholder="How can we help you? Feel free to get in touch!" rows="4"></textarea>
+                        <div class="flex flex-col md:flex-row md:justify-between md:gap-5">
+                            <div class="border-b-[1px] border-b-[rgba(0,0,0,0.5)] mx-2 w-full flex items-center gap-3 flex-shrink md:mt-12">
+                                <i class="fa-solid fa-phone-volume opacity-50 mr-3 text-[20px]"></i>
+                                <input type="tel" name="number" placeholder="Phone" class="border-0 bg-transparent w-full outline-0 text-[16px] p-1">
+                            </div>
+                            <div class="border-b-[1px] border-b-[rgba(0,0,0,0.5)] mx-2 w-full flex items-center gap-3 flex-shrink md:mt-12">
+                                <i class="fa-solid fa-circle-info opacity-50 mr-3 text-[20px]"></i>
+                                <input type="text" name="subject" placeholder="Subject" class="border-0 bg-transparent w-full outline-0 text-[16px] p-1">
+                            </div>
+                        </div>
+            
+                        <div class="border-b-[1px] border-b-[rgba(0,0,0,0.5)] mx-2 w-full flex items-baseline gap-3 flex-shrink md:pb-8 md:my-10">
+                            <i class="fa-solid fa-pencil opacity-50 mr-3 text-[20px]"></i>
+                            <textarea name="comment" id="comment" placeholder="How can we help you? Feel free to get in touch!" rows="4" class="border-0 bg-transparent w-full outline-0 text-[16px] p-1 resize-none font-sans"></textarea>
                         </div>
                     </div>
                 </form>
             </div>
-            <div><strong>Get in Touch</strong></div>
+            <div class="bg-red-800 w-fit text-center text-white my-5 mx-auto block py-5 px-8 rounded-md border-0 text-lg hover:border-[1px] hover:border-red-800 hover:bg-white hover:text-red-800"><strong>Get in Touch</strong></div>
         </section>
     </main>
-    <footer>
-        <p>we are social</p>
-        <div>
-            <p><i class="fa-brands fa-facebook-f"></i></p>
-            <p><i class="fa-brands fa-x-twitter"></i></p>
-            <p><i class="fa-brands fa-instagram"></i></p>
-            <p><i class="fa-brands fa-youtube"></i></p>
+    <footer class="w-auto h-auto bg-[rgb(43,3,3)] pt-[70px] pb-3">
+        <p class="font-sans text-center capitalize text-lg text-[#f6f4ee]">we are social</p>
+        <div class="flex justify-center mt-12">
+            <p class="m-1 border-[1px] border-solid border-[rgb(246,244,238,0.3)] py-[13px] px-4 text-lg text-[antiquewhite] rounded-[50%]"><i class="fa-brands fa-facebook-f"></i></p>
+            <p class="m-1 border-[1px] border-solid border-[rgb(246,244,238,0.3)] py-[13px] px-4 text-lg text-[antiquewhite] rounded-[50%]"><i class="fa-brands fa-x-twitter"></i></p>
+            <p class="m-1 border-[1px] border-solid border-[rgb(246,244,238,0.3)] py-[13px] px-4 text-lg text-[antiquewhite] rounded-[50%]"><i class="fa-brands fa-instagram"></i></p>
+            <p class="m-1 border-[1px] border-solid border-[rgb(246,244,238,0.3)] py-[13px] px-4 text-lg text-[antiquewhite] rounded-[50%]"><i class="fa-brands fa-youtube"></i></p>
         </div>
-        <hr>
-        <p>© 2024 Imomotimi Foundation. All Rights Reserved</p>
+            <hr class="mt-20 text-[antiquewhute] opacity-30 px-14">
+        <p class="text-center text-2xl font-sans m-5 text-[antiquewhite]">© 2024 Imomotimi Foundation. All Rights Reserved</p>
     </footer>
 </body>
 </html>
